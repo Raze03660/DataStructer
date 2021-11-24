@@ -12,7 +12,7 @@ public class PostFix_test {
         BufferedReader indata = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("請輸入中序運算式:");
         String str = indata.readLine();
-        for (int i = 0; i <= str.length()-1; i++) {
+        for (int i = 0; i <= str.length() - 1; i++) {
             Stack[i] = str.charAt(i);
         }
         PostFix(Stack);

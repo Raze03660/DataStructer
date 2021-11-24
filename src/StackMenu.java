@@ -24,9 +24,9 @@ public class StackMenu {
                     Push(item);
                     break;
                 case 2:
-                    if(Top==-1){
+                    if (Top == -1) {
                         System.out.println("堆疊是空的");
-                    }else {
+                    } else {
                         System.out.println(Pop() + "是從該堆疊所拿出的資料");
                     }
                     break;
