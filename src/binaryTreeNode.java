@@ -12,7 +12,7 @@ public class binaryTreeNode {
         }
         traversal(tree, 1);
         System.out.println(inner);
-        System.out.println(leaf);
+        System.out.print(leaf);
     }
 
     private static void traversal(int[] tree, int index) {
