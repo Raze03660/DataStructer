@@ -4,7 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-//執行起來怪怪的
 public class binarySearch {
     public static void main(String[] args) throws IOException {
         int Temp[] = {1, 8, 15, 24, 33, 45, 76, 88, 99};
@@ -22,13 +21,13 @@ public class binarySearch {
         do {
             SearchTime = SearchTime + 1;
             if (Temp[Middle] == Key) {
-                System.out.println("該數字排在第" + Middle + "個順位");
+                System.out.println("該數字排在第" + (Middle+1) + "個順位");
                 System.out.print("一共搜尋" + SearchTime + "次");
                 break;
             } else if (Temp[Middle] < Key) {
                 Low = Middle + 1;               //改變左半部
             } else {
-                High = Middle + 1;              //改變右半部
+                High = Middle - 1;              //改變右半部
             }
             Middle = (int)((Low + High) / 2);
         } while (Low <= High);
