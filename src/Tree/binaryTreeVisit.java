@@ -29,7 +29,7 @@ public class binaryTreeVisit {
         System.out.println();
         post(tree,1);
     }
-
+    //index為起始位置
     private static void pre(int[] tree, int index) {
         if(index< tree.length){
             if(tree[index]!=0){
@@ -57,6 +57,15 @@ public class binaryTreeVisit {
             if(tree[index]!=0){
                 System.out.print(tree[index]+" ");
             }
+        }
+    }
+    private static void pre1(int [] tree ,int index){
+        if(index<tree.length){
+            if(tree[index]!=0){
+                System.out.println(tree[index]+ " ");
+            }
+            pre1(tree, index*2);
+            pre1(tree, index*2+1);
         }
     }
 }
