@@ -19,7 +19,7 @@ public class bubbleSort {
     }
 
     public static void BubSort(int A[], int n) {
-        int i, j = 1, Temp;
+        int i, j , Temp;
         for (i = n - 1; i > 0; i--) {
             for (j = 0; j < i; j++) {
                 if (A[j] > A[j + 1]) {
