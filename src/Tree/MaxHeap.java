@@ -1,7 +1,16 @@
 package Tree;
 
 import java.util.Scanner;
-
+/*
+       35.Max Heap Construction --> 輸出最大堆積數
+       ***索引值0未用到，並設置為0 空節點也設為0***
+       輸入:
+            5
+            1 2 3 4 5
+       輸出:
+            3
+            0 5 4 2 1 3 0 0
+ */
 public class MaxHeap {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

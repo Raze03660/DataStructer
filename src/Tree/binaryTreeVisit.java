@@ -1,7 +1,20 @@
 package Tree;
 
 import java.util.Scanner;
-
+/*
+    33.二元樹的拜訪 --> 依序輸出 前序 中序 後序
+        ***索引值0未用到，並設置為0***
+    輸入:
+        4
+        0 1 2 3
+        ==示意圖==
+            1
+          2   3
+    輸出:
+        1 2 3 前序
+        2 1 3 中序
+        2 3 1 後序
+ */
 public class binaryTreeVisit {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
