@@ -59,13 +59,4 @@ public class binaryTreeVisit {
             }
         }
     }
-    private static void pre1(int [] tree ,int index){
-        if(index<tree.length){
-            if(tree[index]!=0){
-                System.out.println(tree[index]+ " ");
-            }
-            pre1(tree, index*2);
-            pre1(tree, index*2+1);
-        }
-    }
 }
